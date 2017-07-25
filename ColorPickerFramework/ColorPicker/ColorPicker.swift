@@ -107,9 +107,9 @@ import UIKit
     let (r1,g1,b1) = startColor.rgbValues
     let (r2,g2,b2) = endColor.rgbValues
     
-    return UIColor(colorLiteralRed: r1 + progression * (r2 - r1),
-                   green: g1 + progression * (g2 - g1),
-                   blue: b1 + progression * (b2 - b1),
+    return UIColor(red: CGFloat(r1 + progression * (r2 - r1)),
+                   green: CGFloat(g1 + progression * (g2 - g1)),
+                   blue: CGFloat(b1 + progression * (b2 - b1)),
                    alpha: 1)
   }
   
